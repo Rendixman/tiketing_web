@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Tiketing PT Cipta Hospital Makmur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sistem Tiketing RS Cipta Hospital Makmur</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#new-ticket">Buat Tiket Baru</a></li>
+                    <li><a href="#track-ticket">Lacak Tiket</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>Selamat Datang di Portal Bantuan IT</h2>
+                <p>Laporkan masalah Anda dengan mudah dan lacak statusnya di sini.</p>
+                <a href="#new-ticket" class="btn-primary">Laporkan Masalah Sekarang</a>
+            </div>
+        </section>
+
+        <section id="new-ticket" class="form-section">
+            <div class="container">
+                <h2>Buat Tiket Permasalahan Baru</h2>
+                <form action="#" method="POST" class="ticket-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Departemen:</label>
+                        <input type="text" id="department" name="department" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Kategori Masalah:</label>
+                        <select id="category" name="category" required>
+                            <option value="">-- Pilih Kategori --</option>
+                            <option value="hardware">Hardware</option>
+                            <option value="software">Software</option>
+                            <option value="network">Jaringan</option>
+                            <option value="printer">Printer</option>
+                            <option value="other">Lain-lain</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subjek:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Deskripsi Masalah:</label>
+                        <textarea id="description" name="description" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Kirim Tiket</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="track-ticket" class="track-section">
+            <div class="container">
+                <h2>Lacak Status Tiket Anda</h2>
+                <p>Masukkan ID Tiket Anda untuk melihat status terkini.</p>
+                <form action="#" method="GET" class="track-form">
+                    <div class="form-group">
+                        <label for="ticket-id">ID Tiket:</label>
+                        <input type="text" id="ticket-id" name="ticket_id" placeholder="Contoh: CH0012345" required>
+                    </div>
+                    <button type="submit" class="btn-secondary">Lacak Tiket</button>
+                </form>
+                <div id="ticket-status-result" class="ticket-result">
+                    <p>Status tiket Anda akan muncul di sini setelah Anda melacaknya.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
+                <div class="faq-item">
+                    <h3>Bagaimana cara melaporkan masalah baru?</h3>
+                    <p>Anda dapat melaporkan masalah baru dengan mengisi formulir di bagian "Buat Tiket Permasalahan Baru" di atas.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Berapa lama waktu yang dibutuhkan untuk menyelesaikan masalah?</h3>
+                    <p>Waktu penyelesaian bervariasi tergantung pada kompleksitas masalah. Tim support kami akan berusaha secepat mungkin.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Bagaimana cara melacak status tiket saya?</h3>
+                    <p>Anda bisa melacak status tiket dengan memasukkan ID tiket Anda di bagian "Lacak Status Tiket Anda".</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Kontak Kami</h2>
+                <p>Jika Anda memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami.</p>
+                <ul>
+                    <li>Email: <a href="mailto:support@ciptahospital.makmur">support@ciptahospital.makmur</a></li>
+                    <li>Telepon: (021) 123-4567</li>
+                    <li>Jam Operasional: Senin - Jumat, 08:00 - 17:00 WIB</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <p><strong>Tiket Anda berhasil dikirim!</strong></p>
+            <p>Terima kasih. Kami akan segera memproses permintaan Anda.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PT Cipta Hospital Makmur. Didukung oleh PT Indonesia Infrastruktur.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.ticket-form');
+            const popup = document.getElementById('popup');
+            const closeButton = document.querySelector('.close-button');
+
+            console.log('DOM Content Loaded. Initializing pop-up logic.');
+            console.log('Form element found:', form);
+            console.log('Popup element found:', popup);
+            console.log('Close Button element found:', closeButton);
+
+            if (form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Mencegah pengiriman form default
+                    console.log('Form submitted. Attempting to show pop-up.');
+                    if (popup) {
+                        // Menggunakan !important untuk memastikan gaya diterapkan
+                        popup.style.setProperty('display', 'flex', 'important');
+                        console.log('Pop-up display set to flex.');
+                    } else {
+                        console.error('Popup element not found when submit clicked.');
+                    }
+                    form.reset(); // Mengosongkan formulir setelah berhasil
+                });
+            } else {
+                console.error('Ticket form not found.');
+            }
+
+            if (closeButton) {
+                closeButton.addEventListener('click', function() {
+                    console.log('Close button clicked. Hiding pop-up.');
+                    if (popup) {
+                        popup.style.setProperty('display', 'none', 'important');
+                    }
+                });
+            } else {
+                console.warn('Close button not found.');
+            }
+
+            if (popup) {
+                window.addEventListener('click', function(event) {
+                    if (event.target == popup) {
+                        console.log('Clicked outside pop-up. Hiding pop-up.');
+                        popup.style.setProperty('display', 'none', 'important');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

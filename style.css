@@ -1,0 +1,352 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Sangat terang, hampir putih */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #28a745; /* Hijau Utama */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e9f5ff; /* Biru sangat muda */
+    color: #004085; /* Biru gelap */
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 5px solid #007bff; /* Biru cerah */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Biru cerah */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Hijau untuk aksi utama */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Hijau lebih gelap */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Abu-abu untuk aksi sekunder */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Abu-abu lebih gelap */
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    background-color: #fff; /* Putih */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+section:nth-of-type(even) {
+    background-color: #f0f8ff; /* Biru sangat muda (untuk selang-seling) */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #007bff; /* Biru cerah */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #28a745; /* Hijau */
+    border-radius: 2px;
+}
+
+/* Form Styles */
+.ticket-form, .track-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff; /* Putih */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 24px); /* Dikurangi padding dan border */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Pastikan padding masuk dalam lebar */
+}
+
+.form-group textarea {
+    resize: vertical; /* Memungkinkan perubahan ukuran vertikal */
+}
+
+.ticket-form button[type="submit"], .track-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Track Ticket Result */
+.ticket-result {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #b8daff; /* Border biru muda */
+    background-color: #cce5ff; /* Background biru muda */
+    border-radius: 8px;
+    text-align: center;
+    color: #004085; /* Teks biru gelap */
+}
+
+/* FAQ Section */
+.faq-item {
+    background-color: #e6ffed; /* Hijau sangat muda */
+    border: 1px solid #a7d9b7; /* Hijau border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    color: #218838; /* Hijau gelap */
+}
+
+/* Contact Section */
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-section ul li a {
+    color: #007bff; /* Biru cerah */
+    text-decoration: none;
+}
+
+.contact-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3; /* Biru tua untuk footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group select,
+    .form-group textarea {
+        width: calc(100% - 20px); /* Penyesuaian untuk layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-primary {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .ticket-form, .track-form {
+        padding: 20px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
+
+/* Pop-up Styles */
+.popup {
+    display: none !important; /* Penting: Hidden by default, with high priority */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.5); /* Black w/ more opacity */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center;   /* Center vertically */
+}
+
+.popup-content {
+    background-color: #fff; /* Putih */
+    padding: 30px;
+    border: 1px solid #007bff; /* Border biru */
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+}
+
+.popup-content p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.popup-content p strong {
+    color: #28a745; /* Hijau untuk pesan sukses */
+}
